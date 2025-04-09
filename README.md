@@ -39,4 +39,3 @@ Implement a basic Library Management System that demonstrates your understanding
 ### Bonus (if time permits):
 - Implement a simple console menu to interact with your library system
 - Add date tracking for due dates of borrowed items
-
