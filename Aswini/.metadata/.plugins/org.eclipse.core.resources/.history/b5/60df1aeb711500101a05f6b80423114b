@@ -1,0 +1,15 @@
+package Library_Management;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Library l=new Library ();
+		Book l1=new Book(124,"Example",true,"Name",456);
+		l.addItem(l1);
+		l.displayItem();
+		l.removeItem("Example");
+		//l.searchItem("Example");
+	}
+
+}

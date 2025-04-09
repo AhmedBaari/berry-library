@@ -1,0 +1,48 @@
+package Library_Management;
+import java.util.ArrayList;
+
+
+public class Library {
+	ArrayList<LibraryItem> library=new ArrayList<>();
+	public void addItem (LibraryItem lib)
+	{
+		library.add(lib);
+	}
+	public void removeItem (String title)
+	{
+		int i=0;
+		for (i=0;i<library.size();i++)
+		{
+			if ((library.get(i)).getTitle()==title)
+			{
+				library.remove(i);
+			}
+		}
+	}
+	public LibraryItem searchItem (String title) throws ItemNotFound
+	{
+		int i=0;
+		for (i=0;i<library.size();i++)
+		{
+			if ((library.get(i)).getTitle()==title)
+			{
+				return library.get(i);
+			}
+			else 
+			{
+				continue;
+			}
+		}
+		throw new ItemNotFound("Item not found");
+	}
+	public void displayItem ()
+	{
+		int i=0;
+		for (i=0;i<library.size();i++)
+		{
+			System.out.println(library.get(i));
+		}
+	}
+		
+
+}

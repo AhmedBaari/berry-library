@@ -1,0 +1,11 @@
+package Library_Management;
+
+@SuppressWarnings("serial")
+class LibraryException extends Exception {
+
+	public LibraryException(String str)
+	{
+		super(str);
+	}
+class ItemNotFound
+}

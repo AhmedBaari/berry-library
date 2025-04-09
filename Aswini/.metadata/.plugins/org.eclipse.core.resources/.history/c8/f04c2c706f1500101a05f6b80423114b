@@ -1,0 +1,7 @@
+package Library_Management;
+
+public class Book extends LibraryItem{
+	private String author;
+	private int ISBN;
+
+}

@@ -1,0 +1,11 @@
+package Library_Management;
+
+public abstract class LibraryItem {
+	private int id;
+	private String title;
+	private boolean isAvailable;
+	public String getTitle()
+	{
+		return this.title;
+	}
+}

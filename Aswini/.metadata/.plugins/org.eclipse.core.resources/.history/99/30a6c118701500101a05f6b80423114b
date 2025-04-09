@@ -1,0 +1,14 @@
+package Library_Management;
+
+class ItemNotFound extends Exception {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public ItemNotFound(String str)
+	{
+		super(str);
+	}
+
+}

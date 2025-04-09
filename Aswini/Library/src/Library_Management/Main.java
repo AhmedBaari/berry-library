@@ -1,12 +1,12 @@
 package Library_Management;
-
+import java.util.*;
 public class Main {
 
 	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
 		Library l=new Library ();
 		Book b1=new Book(124,"Example",true,"Name",456);
-		Magazine m1=new Magazine(890,"Magazine1",true,"XYZ","11-10-2024");
+		Magazine m1=new Magazine(890,"Magazine1",true,"XYZ",new Date(2024,10,11));
 		l.addItem(b1);
 		l.addItem(m1);
 		l.displayItem();

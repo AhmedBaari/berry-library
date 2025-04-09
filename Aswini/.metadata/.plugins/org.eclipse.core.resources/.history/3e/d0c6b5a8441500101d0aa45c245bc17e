@@ -1,0 +1,9 @@
+package Library_Management;
+
+import java.util.Date;
+
+public class Magazine extends LibraryItem{
+	String publisher;
+	Date issueDate;
+
+}

@@ -1,0 +1,17 @@
+package Library_Management;
+
+public abstract class LibraryItem {
+	private int id;
+	private String title;
+	private boolean isAvailable;
+	public String getTitle()
+	{
+		return this.title;
+	}
+	public boolean isAvailable() {
+		return isAvailable;
+	}
+	public void setAvailable(boolean isAvailable) {
+		this.isAvailable = isAvailable;
+	}
+}

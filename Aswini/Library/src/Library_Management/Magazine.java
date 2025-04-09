@@ -1,25 +1,25 @@
 package Library_Management;
-
+import java.util.*;
 
 public class Magazine extends LibraryItem{
-	public Magazine(int id, String title, boolean isAvailable,String publisher,String issueDate) {
+	public Magazine(int id, String title, boolean isAvailable,String publisher,Date issueDate) {
 		super(id, title, isAvailable);
 		this.publisher=publisher;
 		this.issueDate=issueDate;
 		// TODO Auto-generated constructor stub
 	}
 	private String publisher;
-	private String issueDate;
+	private Date issueDate;
 	public String getPublisher() {
 		return publisher;
 	}
 	public void setPublisher(String publisher) {
 		this.publisher = publisher;
 	}
-	public String getIssueDate() {
+	public Date getIssueDate() {
 		return issueDate;
 	}
-	public void setIssueDate(String issueDate) {
+	public void setIssueDate(Date issueDate) {
 		this.issueDate = issueDate;
 	}
 
